@@ -67,6 +67,7 @@ import createAlerteComponent from './components/alerte/createAlerteComponent.vue
 /* import listeAlerteComponent from './components/alerte/listeAlerteComponent.vue';
 import dashboardComponent from './components/dashboard/dashboardComponent.vue'; */
 import profileUserComponent from './components/utilisateur/profileUserComponent.vue';
+import dashboardComponent from './components/caissier/dashboardComponent.vue';
 
 const routes = [
     {
@@ -78,6 +79,11 @@ const routes = [
     {
         path: '/dashboard',
         component: Dashboard,
+        meta: {public: true} // Marquer cette route comme publique si nécessaire
+    },
+    {
+        path: '/dashboardCaissier',
+        component: dashboardComponent,
         meta: {public: true} // Marquer cette route comme publique si nécessaire
     },
     {
